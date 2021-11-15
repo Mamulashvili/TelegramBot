@@ -32,7 +32,7 @@ return [
 
     'botman' => [
         'telegram' => [
-            'token' => config('botman.telegram_token'),
+            'token' => env('TELEGRAM_TOKEN', '2136659973:AAFf7lCYTNUGscL8XLlFdWI4iHFmEr_Pg0U'),
     ]]
 
 ];
