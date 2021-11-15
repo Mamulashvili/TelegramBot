@@ -1,0 +1,7 @@
+.main-wrapper {
+    background: #fcd2d5 url("../images/hero.webp") center/contain no-repeat;
+}
+
+.main-wrapper * {
+    color: #2196f3;
+}
