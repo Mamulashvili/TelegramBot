@@ -31,27 +31,17 @@ class TelegramUserController extends AdminController
             $actions->add(new SayHi());
         });
 
-        $grid->filter(function($filter){
-
-            // Remove the default id filter
+        $grid->filter(function($filter) {
             $filter->disableIdFilter();
-        
-            // Add a column filter
-            $filter->like('u_name', 'shota');
-        
+            $filter->like('u_name', 'User name');
         });
-
-        // $grid->quickSearch('title');
-        // (new TelegramUser)->where('title', 'like', "%{$input}%");
-
-
 
         $grid->column('id', __('Id'));
         $grid->column('t_firstname', __('Telegram fname'));
         $grid->column('t_lastname', __('Telegram lname'));
         $grid->column('t_id', __('Telegram id'));
         $grid->column('u_name', __('User name'));
-        $grid->column('u_age', __('User age'));
+        $grid->column('u_age', __('User age'))->sortable();
         $grid->column('status', __('Status'));
         $grid->column('created_at', __('Created at'));
         $grid->column('updated_at', __('Updated at'));

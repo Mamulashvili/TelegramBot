@@ -14,7 +14,7 @@ class SayHi extends RowAction
      *
      * @var public $name
      */
-    public $name = 'Say hi';
+    public $name = 'Привет';
 
 
     /**
