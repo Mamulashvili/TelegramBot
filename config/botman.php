@@ -13,6 +13,6 @@ return [
     |
     */
 
-    'telegram_token' => env('TELEGRAM_TOKEN', '2136659973:AAGtIfcuN11ZGBXbNixxx'),
+    'telegram_token' => env('TELEGRAM_TOKEN', '009973:AAGtIfcuN11ZGBXbNixxx'),
 
 ];
